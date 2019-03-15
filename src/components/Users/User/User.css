@@ -1,0 +1,47 @@
+/**/
+.fliptextcard {
+    position: relative;
+    width: 17rem;
+    height:15rem;
+   
+    
+}
+.fliptextcard__images {
+    position: absolute;
+    transition: 1s;
+    transform-style: preserve-3d;
+    height:15rem;
+    width: 15rem;
+}
+.fliptextcard__frontimg2 {
+    position: absolute;
+    text-align: center;
+    backface-visibility: hidden;
+    height:15rem;
+    width: 15rem;
+    background-position: center;
+}
+.fliptextcard__text {
+    position: absolute;
+    /* background-image: url("../../../assets/images/bg.jpg"); */
+    background-color: rgb(199, 197, 197);
+    text-align: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    height:15rem;
+    width: 15rem;
+    background-position: center;
+}
+.fliptextcard__img1{
+    background-image: url("../../../assets/images/14.jpg");
+}
+
+
+.fliptextcard__images:hover {
+    transform: rotateY(180deg);
+}
+
+.display--row{
+    float: left;
+    margin:30px;
+}
